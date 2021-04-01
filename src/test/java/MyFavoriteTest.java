@@ -20,6 +20,7 @@ public class MyFavoriteTest {
         Driver.driver.manage().window().maximize();
         Utils.waitForPageToLoad(30);
         LoginLogoutLib.LoginToApp("lupenyttix-6926@yopmail.com", "Ia123456");
+        Utils.waitForPageToLoad(30);
     }
 
     @Test
@@ -36,7 +37,7 @@ public class MyFavoriteTest {
               String listProductName = homePageObj.getListProductName().getText();
               homePageObj.getMyFavoriteButton().click();
               Utils.waitForPageToLoad(20);
-              String myFavoriteProductName = homePageObj.getMyFavoriteProductName().getTagName();
+              String myFavoriteProductName = homePageObj.getMyFavoriteProductName().getText();
               if(listProductName.equals(myFavoriteProductName)){
                     homePageObj.getSelectProduct().click();
                     homePageObj.getDeleteSelect().click();

@@ -5,10 +5,10 @@ import org.openqa.selenium.support.FindBy;
 
 public class HomePageLib {
 
-    @FindBy(xpath ="//*[@id=\"SearchBoxOld\"]/div/div/div[1]/div[2]/input")
+    @FindBy(xpath ="/html/body/div[1]/div/div/div[3]/div/div/div/div/div/div[2]/div[2]/div/div/div/div/div/div/div[1]/div[2]/input")
     private WebElement searchData;
 
-    @FindBy(xpath="//*[@id=\"SearchBoxOld\"]/div/div/div[2]")
+    @FindBy(className="SearchBoxOld-buttonContainer")
     private WebElement searchButton;
 
     @FindBy(xpath="//*[@id=\"categorySuggestionList\"]/div[1]/h1")
